@@ -2,7 +2,7 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: '25 16 * * *'  # 16:25 UTC = 21:55 IST
+    - cron: '25 16 * * *'  # 21:55 IST
   workflow_dispatch:
 
 jobs:
@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Git
+      - name: Git config
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "23f1002166@ds.study.iitm.ac.in"
