@@ -2,7 +2,7 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: '25 16 * * *'  # 21:55 IST
+    - cron: '25 16 * * *'  # 
   workflow_dispatch:
 
 jobs:
